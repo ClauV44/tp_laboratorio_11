@@ -10,6 +10,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ * @brief función que se encarga de sumar
+ * @param A Es el primer numero que se pide para la operación (float)
+ * @param B Es el segundo numero que se pide para la operación (float)
+ * @return el resultado de la suma (float)
+ */
+
 float sumar (float operandoA, float operandoB)
 {
 	float suma;
@@ -17,6 +24,13 @@ float sumar (float operandoA, float operandoB)
 	suma= operandoA + operandoB;
 	return suma;
 }
+
+/**
+ * @brief función que se encarga de restar
+ * @param A Es el primer numero que se pide para la operación (float)
+ * @param B Es el segundo numero que se pide para la operación (float)
+ * @return el resultado de la resta (float)
+ */
 
 float restar (float operandoA, float operandoB)
 {
@@ -27,6 +41,13 @@ float restar (float operandoA, float operandoB)
 	return resta;
 }
 
+/**
+ * @brief función que se encarga de multiplicar
+ * @param A Es el primer numero que se pide para la operación (float)
+ * @param B Es el segundo numero que se pide para la operación (float)
+ * @return el resultado de la multiplicacion (float)
+ */
+
 float multiplicar (float operandoA, float operandoB)
 {
 	float multiplicacion;
@@ -35,6 +56,14 @@ float multiplicar (float operandoA, float operandoB)
 
 	return multiplicacion;
 }
+
+/**
+ * @brief función que se encarga de dividir.
+ * @param A es el puntero que se encargará de direccionar a donde se almacena el resultado de la operación
+ * @param B Es el primer numero que se pide para la operación (float)
+ * @param C Es el segundo numero que se pide para la operación (float)
+ * @return el estado de la división. (int)
+ */
 
 float dividir (float *pDivision, float operandoA, float operandoB)
 {
@@ -55,6 +84,13 @@ float dividir (float *pDivision, float operandoA, float operandoB)
 	return retorno;
 }
 
+/**
+ * @brief función que se encarga de factorizar
+ * @param A Es el numero que se pide para la operación (float)
+ * @return el resultado de la factorización (int)
+ */
+
+
 int factorizar (float operando)
 {
 	int acumuladorFactorial=1;
@@ -66,6 +102,13 @@ int factorizar (float operando)
 
 	return acumuladorFactorial;
 }
+
+/**
+ * @brief función que muestra el menú de opciones
+ * @param A Es el primer numero que ingresa el usuario (float)
+ * @param B Es el segundo numero que ingresa el usuario (float)
+ * @return 0
+ */
 
 
 int menu (float numeroA, float numeroB)
@@ -80,6 +123,12 @@ int menu (float numeroA, float numeroB)
 	return 0;
 }
 
+/**
+ * @brief función que marca la opción elegida
+ * @param A el número de opción que elige el usuario (int)
+ * @return el número de opción que será ejecutado (int)
+ */
+
 
 int opcionElegida (int opcion)
 {
@@ -91,6 +140,11 @@ int opcionElegida (int opcion)
 	return eleccion;
 }
 
+/**
+ * @brief función que pide validar de nuevo la opción mal elegida
+ * @param A opción elegida por el usuario (int)
+ * @return la opción vuelta a elegir por el usuario que corta el bucle del while
+ */
 
 int errorOpcion (int opcion)
 {
